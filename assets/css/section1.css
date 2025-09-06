@@ -1,0 +1,608 @@
+header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px; /* Adjust the height as needed */
+  background-color: #333;
+  clip-path: polygon(0 0,100% 0,100% 100%,70% 87%,0 100%);
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px; /* Adjust the spacing between menu items */
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Adjust the text color */
+  font-weight: bold;
+  font-size: 25px; /* Adjust the font size */
+}
+
+/* Optional: Add hover effect on the menu items */
+nav a:hover {
+  color: #FFBA01; /* Change the color on hover */
+}
+.download-cv-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 8px 12px; /* Adjust padding for a smaller button */
+  border-radius: 5px;
+  border: 1px solid #000; /* Add border for a button-like appearance */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Position the "Download CV" button to the top left */
+.download-cv-btn {
+  position: absolute;
+  top: 15px; /* Adjust the top position as needed */
+  left: 15px; /* Adjust the left position as needed */
+}
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(120,120,121,1) 0%, rgba(136,136,136,1) 100%);
+  border-radius: 10px;
+} 
+.section1 {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 10vh;
+}
+
+.semi-circle-container {
+  width: 13cm;
+  height: 15cm; /* Half of the desired height */
+  border-radius: 50% 40% 0 0; /* Creates a semi-circle with circular side on top */
+  overflow: hidden;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  background-color: #ccc; /* Set the background color of the semi-circle to grey */
+}
+
+.semi-circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Use 'cover' to ensure the entire semi-circle is filled */
+}
+
+
+
+
+.animated_title {
+  color: #222;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.3px;
+  height: 40vmax;
+  position: relative;
+  width: 50vmax;
+  margin: 0 auto;
+  display: flex;
+  left: 4%;
+}
+
+.animated_title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.animated_title > div div {
+  font-size: 5vmax;
+  font-weight: 605;
+  padding: 2vmin 0;
+  position: absolute;
+}
+
+.animated_title > div div span {
+  display: block;
+}
+
+.animated_title > div.text_top {
+  border-bottom: .8vmin solid #747474;
+  width: 90%;
+  animation: showBottomText 0.4s;
+  animation-delay: 0.1s;
+  top: 0;
+}
+
+.animated_title > div.text_top div {
+  animation: showTopText 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+
+.animated_title > div.text_top div span:first-child {
+  color: #747474;
+}
+
+.animated_title > div.text_top div span:first-child:hover{
+  color: #F34F1C;
+}
+.animated_title > div.text_top div span:nth-child(2):hover{
+  color: #FFBA01;
+}
+
+.animated_title > div.text_bottom div span:hover{
+  color: #7FBC00;
+}
+
+.animated_title > div.text_bottom {
+  bottom: 0;
+}
+
+.animated_title > div.text_bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+.text-bounce {
+transform: scaleY(1) translateY(0px);
+transform-origin: 50% 100%;
+transition: .3s ease-in-out;
+}
+.animate {
+animation: bouncy 1s forwards;
+}
+:hover {
+cursor: default;
+}
+
+@keyframes showTopText {
+0% {
+  transform: translate3d(0, 100%, 0);
+}
+40%, 60% {
+  transform: translate3d(0, 50%, 0);
+}
+100% {
+  transform: translate3d(0, 0, 0);
+}
+}
+@keyframes showBottomText {
+0% {
+  transform: translate3d(0, -100%, 0);
+}
+100% {
+  transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes bouncy{
+0%{transform: scaleY(1) translateY(0px);}
+25%{transform: scaleY(.5) translateY(20px);}
+50%{transform: scaleY(1.1) translateY(-20px);}
+  75%{transform: scaleY(.8) translateY(10px);}
+ 100%{transform: scaleY(1) translateY(0px);}
+}
+
+@keyframes bounce-in-right {
+  0% {
+    transform: translateX(120px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateX(68px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateX(32px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateX(8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-120px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-left {
+  0% {
+    transform: translateX(-120px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateX(-68px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateX(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateX(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes bounce-in-bottom {
+  0% {
+    transform: translateY(120px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .boxes {
+    display: block;
+    top: 5%;
+    width: 32vmax;
+  }
+
+  .animated_title {
+    width: 40vmax;
+  }
+
+  .animated_title > div div {
+    font-size: 4vmax;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .section1 {
+    grid-template-columns: auto;
+  }
+
+  .animated_title {
+    left: 0%;
+  }
+
+  .boxes {
+    display: block;
+    width: 45vmax;
+    top: -10%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .animated_title {
+    width: 45vmax;
+  }
+  
+  .animated_title > div div {
+  font-size: 4vmax;
+  }
+
+  .boxes {
+    width: 40vmax;
+    top: -15%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .animated_title {
+    left: 4%;
+  }
+
+  .animated_title > div div {
+    font-size: 3.7vmax;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+  
+  .animated_title {
+    left: 3%;
+    width: 35vmax;
+  }
+  
+  .animated_title > div div {
+  font-size: 3.6vmax;
+  }
+
+  .boxes {
+    width: 30vmax;
+    top: -20%;
+  }
+  
+}
+footer{
+  background:rgba(0,0,0,0.8);
+  text-align: center;
+  padding:2rem 0;
+  color: white;
+  align-items: center;
+
+  
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack vertically */
+    align-items: flex-end;  /* Keep menu on the right */
+    height: auto; /* Allow height to expand */
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end; /* Align right */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .download-cv-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack vertically */
+    align-items: flex-end;  /* Keep menu on the right */
+    height: auto; /* Allow height to expand */
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end; /* Align right */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .download-cv-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack vertically */
+    align-items: flex-end;  /* Keep menu on the right */
+    height: auto; /* Allow height to expand */
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end; /* Align right */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .download-cv-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack vertically */
+    align-items: flex-end;  /* Keep menu on the right */
+    height: auto; /* Allow height to expand */
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end; /* Align right */
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .download-cv-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    /* Mobile styles */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Smaller font for mobile */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+}
+  .download-cv-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .container {
+    width: 80vw;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+}
+nav li {
+  margin-right: 35px; /* Was 20px — this gives more space between buttons */
+}
+
+  
+

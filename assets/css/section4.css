@@ -1,0 +1,122 @@
+.section4 {
+  overflow: hidden !important;
+}
+.container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 10%; /* Add margin on both sides */
+}
+
+.skills-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  
+}
+
+.progress-bar-container {
+  background-color: #e0e0e0;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Skill-specific colors */
+.progress-bar.python {
+  background-color: #4caf50; /* Green for HTML */
+}
+
+.progress-bar.data {
+  background-color: #3498db; /* Blue for CSS */
+}
+
+.progress-bar.sql {
+  background-color: #f39c12; 
+  /* Orange for JavaScript */
+}
+.progress-bar.etl {
+  background-color: hsl(17, 90%, 51%); 
+}
+.myskills {
+  font-family:'Poppins', sans-serif;  
+  font-weight: 600;
+  font-size: 3.5em;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(52, 168, 83);
+}
+
+.myskills .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.myskills .line {
+  opacity: 1;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #7FBC00;    
+
+    transform-origin: 100% 100%;
+    bottom: 0;
+  
+    
+}
+
+
+.myskills .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .myskills {
+    font-size: 3em;
+  }
+
+  .myskills .line {
+    height: 4px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .myskills {
+    font-size: 2em;
+  }
+
+  .myskills .line {
+    height: 3px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .myskills {
+    font-size: 2em;
+  }
+
+  .myskills .line {
+    height: 2px;
+  }
+}

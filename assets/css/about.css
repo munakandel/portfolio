@@ -1,0 +1,178 @@
+.about {
+  overflow: hidden !important;
+}
+
+.content3 {
+    font-family:'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 55% auto;
+} 
+.aboutme {
+  font-family:'Poppins', sans-serif;  
+  font-weight: 600;
+  font-size: 3.5em;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: rgb(66, 133, 244);
+}
+
+.aboutme .text-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+  
+  .aboutme .line {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #01A6F0;
+    transform-origin: 100% 100%;
+    bottom: 0;
+  }
+  
+  .aboutme .letter {
+    display: inline-block;
+    line-height: 0.1em;
+  }
+
+  
+
+  .description {
+    font-size: 18px;
+    font-weight: 450;
+    position: absolute;
+    margin: auto;
+  width: 100%;
+    text-align: center;
+
+  }
+
+  
+
+  
+  .para_aboutme {
+    padding-left: 8%;
+    padding-top: 4%;
+  }
+
+ 
+
+  @media only screen and (min-width: 1440px) {
+
+    .aboutme {
+      top: 70%;
+    }
+    .aboutme.line {
+      top:70%
+
+    }
+    
+
+    .content {
+      left: 4%;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+
+    .content {
+      left: 1%;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+    .content {
+      display: none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    .aboutme {
+      font-size: 3em;
+    }
+    .description {
+      font-size: 17px;
+    }
+   
+  }
+
+  @media only screen and (max-width: 891px) {
+
+    .aboutme {
+      font-size: 2.7em;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .content3 {
+      display: block;
+    }
+    .aboutme {
+      font-size: 2.5em;
+      top: 70%;
+
+    }
+    .description {
+      font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: -20%;
+    top: 80%;
+
+    }
+    
+    .para_aboutme {
+      text-align: center; /* Add this line to center-align the text */
+
+      padding-left: 20%;
+    }
+
+   
+    }
+  
+
+  @media only screen and (max-width: 576px) {
+
+    .aboutme{
+      font-size: 2.3em;
+    }
+
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    .aboutme {
+      font-size: 2em;
+    }
+
+  }
+
+  @media only screen and (max-width: 420px) {
+
+    .aboutme {
+      top: 70%;
+      font-size: 1.6em;
+    }
+
+    .aboutme .line {
+      height: 4px;
+    }
+
+  
+
+  }
+
+ 
+  
